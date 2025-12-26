@@ -14,7 +14,7 @@ zomato.csv
 Contains restaurant-level details such as city, country code, cuisines, average cost for two, price range, ratings, votes, online delivery, and table booking options.
 
 Country-Code.xlsx
-Maps country codes to country names and currencies, enabling meaningful geographical analysis.
+Maps country codes to country names , enabling meaningful geographical analysis.
 
 🛠️ Tools & Technologies
 
