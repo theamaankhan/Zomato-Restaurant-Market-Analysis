@@ -1,108 +1,62 @@
-🍽️ Zomato Restaurant Data Analysis (EDA)
+🍽️ Zomato Restaurant Market Analysis: Data-Driven Growth Strategies
+  
 📌 Project Overview
+This project performs a comprehensive Exploratory Data Analysis (EDA) on the Zomato restaurant dataset. Unlike standard data analysis that focuses solely on visualization, this project aims to diagnose business problems—specifically identifying the "Service Gap" in online delivery, the geographic concentration risk, and the price-segmentation trap that affects revenue scalability.
+Key Objective: To transform raw transactional data into a strategic roadmap for vendor onboarding and revenue optimization.
 
-This project performs Exploratory Data Analysis (EDA) on Zomato restaurant data to uncover insights related to pricing, ratings, geography, cuisines, and service availability.
-The objective is to transform raw datasets into actionable insights using Python-based data analysis and visualization techniques.
+--------------------------------------------------------------------------------
+📂 Dataset & Architecture
+The analysis is based on two primary datasets merged to create a global view of the restaurant ecosystem:
+1. zomato.csv: Contains 9,551 records with features including Average Cost for two, Has Online delivery, Aggregate rating, and Cuisines.
+2. Country-Code.xlsx: A dimension table used to map country codes to actual names, enabling geographic segmentation.
+Tech Stack:
+• Python: Core programming.
+• Pandas & NumPy: Data cleaning, merging, and currency normalization.
+• Matplotlib & Seaborn: Static visualizations (Boxplots, Heatmaps, Stacked Bar Charts).
 
-This project is designed as a resume-ready portfolio project for a fresher, demonstrating strong analytical thinking, data storytelling, and business understanding.
+--------------------------------------------------------------------------------
+🔍 Key Analysis & Insights
+1. The "90/10" Geographic Monopoly
+• Observation: The dataset is heavily skewed, with India accounting for 94.4% of all listings. Within India, the New Delhi/NCR region holds over 70% of the inventory.
+• Business Implication: Zomato functions as a hyper-local utility in North India but merely as a directory (discovery only) in international markets like the US and UK, where delivery penetration is zero in this dataset.
+• Action: Global strategies cannot be generalized; models must be segmented by Country to avoid currency and cultural bias.
+2. The "Service Gap" (Revenue Opportunity)
+• Online Delivery: Only 25.7% of restaurants offer online delivery.
+• Table Booking: Only 12.1% offer table booking.
+• Strategic Insight: There are over 6,000 verified restaurants in the Indian market that are listed but not monetized via delivery logistics. This represents the immediate Total Addressable Market (TAM) for the sales team.
+3. The "Average" Quality Trap
+• Rating Distribution: The data follows a Gaussian distribution centered around 3.1 - 3.2.
+    ◦ Average (2.5–3.4): ~40-50% of restaurants.
+    ◦ Not Rated (0.0): ~22% of restaurants (2,148 partners).
+• Insight: The "0" ratings represent a cold-start problem (onboarding issues), not negative customer sentiment. These partners need a "First 5 Reviews" campaign to build social proof.
+4. Cuisine & Pricing Strategy
+• North Indian cuisine dominates the Low and Medium price tiers (Volume Drivers).
+• Consumer Shift: As price sensitivity decreases (moving to Very High price range), consumer preference shifts significantly toward Italian and Continental cuisines.
+• Recommendation: To drive higher Average Order Value (AOV), Zomato Gold/Pro marketing should target Italian/Continental clusters.
 
-📂 Dataset Information
+--------------------------------------------------------------------------------
+📊 Visualizations Included
+The notebook includes "Boardroom-Ready" visualizations with data labels and strategic color coding:
+1. 100% Stacked Bar Charts: To show the shift in Table Booking penetration across countries.
+2. Correlation Heatmaps: Analyzing the relationship between Price range, Votes, and Aggregate rating.
+3. Boxplots with Semantic Colors: Validating rating thresholds (Red for Poor, Green for Excellent).
+4. Geographic Pie Charts: Visualizing the massive market imbalance favoring New Delhi.
 
-The analysis uses two datasets:
+--------------------------------------------------------------------------------
+🚀 Strategic Recommendations (The "So What?")
+Based on the data, the following actions are recommended for the business stakeholders:
+1. Aggressive Internal Conversion: Stop focusing on acquiring new restaurants. Focus on converting the 7,100 existing "Listing-Only" partners into "Delivery Partners."
+2. Tier-2 City Expansion: The NCR market is saturated. Growth teams should pivot to under-represented metros like Pune, Bangalore, and Mumbai, which show low density in this dataset relative to their population.
+3. Vendor Quality Consulting: Launch B2B training for the ~4,000 "Average" rated restaurants to improve hygiene and service, thereby lifting the platform's NPS.
 
-zomato.csv
-Contains restaurant-level details such as city, country code, cuisines, average cost for two, price range, ratings, votes, online delivery, and table booking options.
-
-Country-Code.xlsx
-Maps country codes to country names , enabling meaningful geographical analysis.
-
-🛠️ Tools & Technologies
-
-Python
-
-Pandas & NumPy – Data cleaning and manipulation
-
-Matplotlib & Seaborn – Data visualization
-
-Jupyter Notebook – Interactive analysis
-
-🔍 Analysis Performed
-
-Data loading and preprocessing
-
-Missing value analysis
-
-Summary statistics and correlation analysis
-
-Rating category and numeric rating distribution
-
-Online delivery and table booking analysis
-
-Country-wise and city-wise restaurant distribution
-
-Average cost for two (country and city level)
-
-Price range categorization and distribution
-
-Cuisine trends across price categories
-
-⭐ Key Insights
-🌍 Geographical Insights
-
-The dataset is heavily concentrated in India, which dominates restaurant listings.
-
-A small number of countries significantly influence overall platform trends.
-
-🏙️ City-Level Trends (India)
-
-Major metropolitan cities host the highest number of restaurants.
-
-These cities also show higher average dining costs, reflecting urban demand and premium dining options.
-
-💰 Pricing Patterns
-
-Most restaurants fall into Low and Medium price categories.
-
-High and Very High priced restaurants form a relatively small segment.
-
-Pricing alone does not strongly influence customer ratings.
-
-⭐ Ratings & Customer Perception
-
-A large share of restaurants are rated “Average” or remain “Not rated”.
-
-Only a small percentage achieve “Excellent” ratings, indicating strong competition and scope for quality improvement.
-
-🚚 Service Availability
-
-The majority of restaurants do not offer online delivery or table booking.
-
-Online delivery and reservation services are concentrated in select countries and major cities.
-
-This highlights a clear opportunity for digital service expansion.
-
-🍽️ Cuisine Insights
-
-Lower price ranges are dominated by casual and fast-service cuisines.
-
-Higher price ranges include more international and premium cuisines, reflecting changing consumer preferences.
-
-📈 Business Value
-
-Restaurants can use these insights to optimize pricing and service strategies.
-
-Food platforms can identify high-growth cities and markets.
-
-Demonstrates how EDA supports data-driven decision-making in real-world business contexts.
-
-🧠 Learning Outcomes
-
-This project strengthened skills in:
-
+--------------------------------------------------------------------------------
+🧠 Learning Outcome
+This project strengthened practical skills in:
 Data cleaning and preprocessing
+Feature engineering and aggregation
+Visualization and storytelling using data
+Extracting meaningful business insights from real-world datasets
 
-Exploratory data analysis
-
-Data visualization and storytelling
-
-Translating data into meaningful business insights
+--------------------------------------------------------------------------------
+👤 Author
+Data Analyst | Strategic Problem Solver Focusing on translating raw data into revenue-generating business insights.
