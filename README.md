@@ -59,4 +59,6 @@ Extracting meaningful business insights from real-world datasets
 
 --------------------------------------------------------------------------------
 👤 Author
-Data Analyst | Strategic Problem Solver Focusing on translating raw data into revenue-generating business insights.
+Amaan Khan Aspiring Data Analyst | Power BI | Data Visualization | Analytics
+
+📧 Email: amaankhanamaan8@gmail.com 🔗 LinkedIn: www.linkedin.com/in/theamaan-khan
